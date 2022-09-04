@@ -12,7 +12,7 @@ int main() {
     }
     cout << endl;
 
-    std::sort(numbers.begin(),numbers.end(),std::greater<int>());
+    std::sort(numbers.begin(),numbers.end(),std::less<int>());
     auto last = std::unique(numbers.begin(),numbers.end());
     numbers.erase(last,numbers.end());
 
